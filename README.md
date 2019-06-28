@@ -4,5 +4,5 @@ This is an implementation of an ML model that would classify and automate the re
 Use!
 A pickled model is available for deployment.
 
-How it works: Use this Binder link -- https://hub.gke.mybinder.org/user/jain-rish-inspector_ml-pmce53br/tree
+How it works: Use this Binder link [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jain-rish/inspector_ML/master)
 
