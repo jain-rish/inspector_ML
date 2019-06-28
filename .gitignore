@@ -1,7 +1,4 @@
-# data #
-###################
+*.png
 cleaned_data/
 misc/
 examples/
-*png
-
