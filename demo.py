@@ -22,7 +22,8 @@ def find_coeffs(source_coords, target_coords):
     return np.array(res).reshape(8)
 
 # Step 1. Display a sample-image
-img = Image.open('cleaned_data/Gel14_2019-03-25_Hts97_6_8bit.png')
+file_name = sys.argv[1]
+img = Image.open(file_name)
 #plt.imshow(np.asarray(img))
 #plt.show()
 
@@ -52,7 +53,6 @@ number_expts= 1
 
 data, bounds = gelquant.lane_parser(img_transform, number_lanes, number_expts, 0, 100)
 
-
 # drop the EARLY part of the waveform
 data = np.array(data)
 data= data[:, -177:]
@@ -80,10 +80,9 @@ for i in range(0, 26):
 	(x, y) = (20+ 36*i, 120)
 	color = 'rgb(255, 100, 255)' # green
 	draw.text((x, y), str(y_predict[i]), fill=color, fontsize=20)
-
-
  	
 # save the edited image
-img.save('ML_inspector_RJ.png')
+savename= 'annotated_'+ file_name
+img.save(savename)
 #print(y_predict)
 
