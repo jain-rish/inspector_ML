@@ -1,6 +1,6 @@
 appnope==0.1.0
 backcall==0.1.0
-certifi==2019.3.9
+certifi==2022.12.7
 cycler==0.10.0
 decorator==4.4.0
 -e git+https://github.com/jharman25/gelquant.git@0fcac71a4ef79d41c643d9c20098b5e688eae586#egg=gelquant
